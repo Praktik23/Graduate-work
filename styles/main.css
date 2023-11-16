@@ -1,0 +1,66 @@
+html{
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    transition: 0.3s;
+}
+
+.container {
+    max-width: 1142px;
+    margin: 0 auto;
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+
+}
+
+.header-logo {
+    display: block;
+    width: 97px;
+    height: 30px;
+}
+
+.nav {
+    display: flex;
+    flex-basis: 74%;
+}
+
+.header-nav {
+    list-style-type: none;
+    display: flex;
+    gap: 67px;
+    
+}
+.header-nav a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    
+}
+
+.header-socials {
+    display: flex;
+    gap: 30px;
+}
+
+.instagram {
+    display: block;
+}
+
+.facebook {
+    display: block;
+}

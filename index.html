@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дипломный Макет Базовый FrontendBlok</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="header-item">
+                   <a class="header-logo" href="index.html"><img src="images/logo.svg
+                    " alt=""></a>
+                    <nav class="nav">
+                        <ul class="header-nav">
+                            <li><a href="#"></a>Мероприятия</li>
+                            <li><a href="#"></a>Расписание</li>
+                            <li><a href="#"></a>О компании</li>
+                        </ul>
+                    </nav>
+                    <div class="header-socials socials-link">
+                        <a  class="instagram" href="#"><img src="images/instagram.svg" alt=""></a>
+                        <a class="facebook" href="#"><img src="images/facebook.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="benefits">
+        <div class="container">
+            <h2 class="benefits-title">
+                онлайн тренировки любой сложности
+            </h2>
+            <div class="benefits-training">
+                <p>&gt 15 </p>
+                <p>тренировок</p>
+            </div>
+            <div class="benefits-info">
+                <p>в области спортивной физиологии и нутрициологии</p>
+                <a class="benefits-link" href="#">Узнать подробнее</a>
+            </div>
+            <button class="button">
+                <img src="images/arrow.svg" alt="">
+            </button>
+
+        </div>
+    </section>
+    <section class="events">
+        <div class="container">
+            <h2>Ближайшие события</h2>
+            <div class="events-box">
+                <div class="events-box__item">
+                    <picture>
+                        <div class="events-box__cover">
+                        <img src="images/maraphon.jpg" srcset="images/maraphon@2x.jpg 2x, images/maraphon@3x.jpg 3x" alt="maraphon">
+                    </div>
+                    </picture>
+                    <p>29.06 - 4.07</p>
+                    <h3>Марафон выносливости</h3>
+                    <a class="events-link" href="#">Записаться</a>
+                    <p>марафон</p>
+                    
+                </div>
+                <div class="events-box__item">
+                    <picture>
+                        <div class="events-box__cover">
+                        <img src="images/vebinar1.jpg" srcset="images/vebinar1@2x.jpg 2x, images/vebinar1@3x.jpg 3x" alt="vebinar1">
+                    </div>
+                    </picture>
+                    <p>9.07</p>
+                    <h3>Как стать тренером?</h3>
+                    <a class="events-link" href="#">Записаться</a>
+                    <p>марафон</p>
+                    
+                </div>
+                <div class="events-box__item">
+                    <picture>
+                        <div class="events-box__cover">
+                        <img src="images/vebinar2.jpg" srcset="images/vebinar2@2x.jpg 2x, images/vebinar2@3x.jpg 3x" alt="vebinar2">
+                    </div>
+                    </picture>
+                    <p>29.06 - 4.07</p>
+                    <h3>Марафон выносливости</h3>
+                    <a class="events-link" href="#">Записаться</a>
+                    <p>марафон</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="timetable">
+        <div class="timetable-title">
+            <h2>Расписание тренировок</h2>
+        <p>22 - 28 июня</p>
+        </div>
+        <div class="timetable-grid">
+            <div class="timetable-cover">
+                <p>22 июня, 10:00</p>
+                <img src="images/timetable1.svg" alt="">
+                <p>Функциональный тренинг</p>
+            </div>
+            <div class="timetable-cover">
+                <p>24 июня, 10:00</p>
+                <img src="images/timetable2.svg" alt="">
+                <p>Body sculpt</p>
+            </div>
+            <div class="timetable-cover">
+                <p>26 июня, 11:00</p>
+                <img src="images/timetable3.svg" alt="">
+                <p>L.A.B.</p>
+            </div>
+            <div class="timetable-cover">
+                <p>23 июня, 10:00</p>
+                <img src="images/timetable4.svg" alt="">
+                <p>Силовой микс</p>
+            </div>
+            <div class="timetable-cover">
+                <p>25 июня, 11:00</p>
+                <img src="images/timetable5.svg" alt="">
+                <p>Дыхательные практики</p>
+            </div>
+            <div class="timetable-cover">
+                <p>27 июня, 10:00</p>
+                <img src="images/timetable6.svg" alt="">
+                <p>Комплексная разминка</p>
+            </div>
+        </div>
+    </section>
+    <section class="subscription">
+        <h3>Подпишитесь на рассылку</h3>
+        <div class="form">
+            <form action="">
+                <input class="form-input" id="email" type="email" autocomplete="on" placeholder="Ваш e-mail">
+                <button type="submit">ПОДПИСАТЬСЯ</button>
+                <!-- <input class="form-btn"  type="button" value="ПОДПИСАТЬСЯ"> -->
+            </form>
+        </div>
+        <div class="agreement">
+            <input type="checkbox" id="01" class="checkbox">
+            <label for="01">Согласен с обработкой <a href="https://annblok.ru/workshop" target="_blank">персональных данных</a></label>
+         </div>
+    </section>
+    <section class="description">
+        <div class="container">
+            <div class="description-box">
+                <h2>О компании</h2>
+                <p>Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с нами и вы сами увидите, что мы проводим не только онлайн-тренировки.</p>
+                <button class="btn">Записаться</button>
+                <picture>
+                    <div class="description-box__cover">
+                    <img src="images/rectangle.jpg" srcset="images/rectangle@2x.jpg 2x, images/rectangle@3x.jpg 3x" alt="rectangle">
+                </div>
+                </picture>
+                <div class="description-box__list">
+                    <div class="description-box__list-iner">
+                        <h3>Экономия времени</h3>
+                    <p>Не нужно тратить время на дорогу</p>
+                    </div>
+                    <div class="description-box__list-iner">
+                        <h3>Индивидуальный подход</h3>
+                    <p>Внимание тренера пренадлежит только вам</p>
+                    </div>
+                    <div class="description-box__list-iner">
+                        <h3>Экономия денег</h3>
+                    <p>Средняя цена одной тренировки - 700₽</p>
+                    </div>
+                    <div class="description-box__list-iner">
+                        <h3>Опытный персонал</h3>
+                    <p>Стаж работы у наших тренеров от 5 лет</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <a class="header-lodo logo" href="index.html"></a>
+            </div>
+            <div class="footer-nav">
+                <ul class="header-nav">
+                    <li><a href="#"></a>Мероприятия</li>
+                    <li><a href="#"></a>Расписание</li>
+                    <li><a href="#"></a>О компании</li>
+                </ul>
+            </div>
+            <div class="email">
+                <img class="email-img" src="images/ellipse.svg" alt="ellipse">
+                <a class="email-link" href="#">info@freefit.com</a>
+            </div>
+            <div class="footer-socials socials-link">
+                <a class="instagram" href="#" target="_blank"></a>
+                <a class="facebook" href="#" target="_blank"></a>
+            </div>
+            <div class="footer-text">
+                <p>© 2022, Все права защищены</p>
+                <p>Сделано в рамках курса учебной платформы <span><a href="#">Annblok</a></span></p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
