@@ -134,6 +134,12 @@ p {
     text-decoration: none;
 }
 
+.benefits-link:hover {
+    transition: 0.2px;
+    background-color: #2B3541;;
+    color: #FBF138;
+}
+
 .button {
     margin-top: 183px;
     border-style: none;
@@ -162,13 +168,17 @@ p {
     gap: 18px;
 }
 
-/* .events-box__item {
+.events-box__item {
     position: relative;
-} */
-
-.events-box__cover {
-    position: relative;
+    background-image: url(../images/maraphon.jpg);
 }
+
+
+/* .events-box__cover:hover {
+    opacity: 0.3;
+    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.00) 100%);
+    
+} */
 
 .events-box__item p {
     position: absolute;
@@ -214,4 +224,9 @@ p {
     font-size: 18px;
     font-weight: 400;
     line-height: 150%;
+}
+
+.timetable-cover {
+    background-image: url(../images/timetable1.svg);
+    background-repeat: no-repeat;
 }
