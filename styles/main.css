@@ -146,8 +146,8 @@ p {
 }
 
 .benefits-area {
-    width: 29vw;
-    height: 100%;
+    width: 464px;
+    height: 850px;
     background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
     opacity: 0.2;
     position: relative;
@@ -908,12 +908,62 @@ p {
 
 /*Responsive*/
 
-@media (min-width: 1200px) {
+@media (max-width: 1300px) {
+    .container {
+        max-width: 900px;
+    }
     .benefits-img {
-        background-size: 56vw auto;
+        background-size: contain;
+        background-size: 89%;
+        right: -43%;
     }
     .benefits-area {
-        /* background-size: 29vw auto; */
-        object-fit: contain;
+        width: 434px;
+        height: 774px;
+    }
+    .benefits-title {
+        font-size: 34px;
+        padding-top: 145px;
+    }
+    .benefits-training {
+        font-size: 31px;
+        margin-top: 22px;
+    }
+    .benefits-info {
+        margin-left: 84px;
+    }
+    .button {
+        margin-top: 200px;
+    }
+    .events-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+
+    
+    .events-box__bg-1 {
+        max-width: 33.78vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .events-box__bg-2 {
+        max-width: 33.78vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .events-box__bg-3 {
+        max-width: 33.78vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+
+@media (max-width: 1001px) {
+    .container {
+        max-width: 800px;
     }
 }
