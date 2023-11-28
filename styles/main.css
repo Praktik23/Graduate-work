@@ -126,7 +126,7 @@ p {
     line-height: 125%;
     letter-spacing: 1.44px;
     text-transform: uppercase;
-    max-width: 676px;
+    max-width: 59.19vw;
     padding-top: 169px;
     padding-left: 1px;
     margin-bottom: 0;
@@ -158,6 +158,8 @@ p {
 .benefits-img {
     background-image: url(../images/girl.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 996px;
     width: 996px;
     height: 850px;
     position: absolute;
@@ -233,24 +235,33 @@ p {
     margin-bottom: 40px;
 }
 
-.events-box {
+/* .events-box {
     display: flex;
     justify-content: space-between;
     gap: 18px;
     position: relative;
-}
+} */
+
+ .events-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
 
 .events-box__bg-1 {
     position: relative;
     background-image: url(../images/maraphon.jpg);
-    width: 367px;
-    height: 598px;
+    /* width: 367px;
+    height: 598px; */
 }
 
 .events-box__cover {
-    display: inline-block;
-	position: relative;    
-	line-height: 0;
+    height: 51.55vw;
+    min-height: 336px;
+    max-height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .events-box__cover:after {
@@ -282,15 +293,15 @@ p {
 .events-box__bg-2 {
     position: relative;
     background-image: url(../images/vebinar1.jpg);
-    width: 367px;
-    height: 598px;
+    /* width: 367px;
+    height: 598px; */
 }
 
 .events-box__bg-3 {
     position: relative;
     background-image: url(../images/vebinar2.jpg);
-    width: 367px;
-    height: 598px;
+    /* width: 367px;
+    height: 598px; */
 }
 
 .events-box__iner {
@@ -908,7 +919,7 @@ p {
 
 /*Responsive*/
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
     .container {
         max-width: 900px;
     }
@@ -935,6 +946,13 @@ p {
     .button {
         margin-top: 200px;
     }
+
+    .events-box__cover {
+        height: 51.55vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+    }
     .events-box {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -943,27 +961,27 @@ p {
 
     
     .events-box__bg-1 {
-        max-width: 33.78vw;
-        background-size: contain;
+        background-position: center center;
         background-repeat: no-repeat;
+        height: 46.44vw;
     }
     .events-box__bg-2 {
-        max-width: 33.78vw;
-        background-size: contain;
+        background-position: center center;
         background-repeat: no-repeat;
+        height: 46vw;
     }
     .events-box__bg-3 {
-        max-width: 33.78vw;
-        background-size: contain;
+        background-position: center center;
         background-repeat: no-repeat;
+        height: 46vw;
     }
-}
+} */
 
 
 
 
-@media (max-width: 1001px) {
+/* @media (max-width: 1001px) {
     .container {
         max-width: 800px;
     }
-}
+} */
