@@ -136,6 +136,7 @@ p {
     display: flex;
     justify-content: space-between;
     position: relative;
+    max-width: 100%;
 }
 
 .benefits-holder {
@@ -145,7 +146,7 @@ p {
     justify-content: flex-end;
 }
 
-.benefits-area {
+/* .benefits-area {
     width: 464px;
     height: 850px;
     background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
@@ -153,15 +154,35 @@ p {
     position: relative;
     top: -17px;
     z-index: 0;
+} */
+.benefits-area {
+    width: 24.8vw;
+    height: auto;
+    background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+    opacity: 0.2;
+    position: relative;
+    top: -17px;
+    z-index: 0;
+    
+
 }
+
+/* .benefits-img {
+    background-image: url(../images/girl.png);
+    background-repeat: no-repeat;
+    width: 996px;
+    height: 850px;
+    position: absolute;
+    margin-top: 22px;
+    right: -184px;
+    z-index: 1;
+} */
 
 .benefits-img {
     background-image: url(../images/girl.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 996px;
-    width: 996px;
-    height: 850px;
+    width: 53.22vw;
+    height: auto;
     position: absolute;
     margin-top: 22px;
     right: -184px;
@@ -223,7 +244,7 @@ p {
 
 
 .events {
-    margin-top: 143px;
+    margin-top: 156px;
 }
 
 .events h2 {
@@ -255,7 +276,7 @@ p {
     height: 598px; */
 }
 
-.events-box__cover {
+.events-box__bg {
     height: 51.55vw;
     min-height: 336px;
     max-height: 600px;
@@ -264,13 +285,13 @@ p {
     background-position: center center;
 }
 
-.events-box__cover:after {
+.events-box__bg:after {
 	content: "";
 	opacity: 0;
 	transition: opacity 0.2s ease-in-out;
 }
 
-.events-box__cover:hover:after {
+.events-box__bg:hover:after {
 	content: "";
 	display: block;    
 	width: 100%;
@@ -283,7 +304,7 @@ p {
 	opacity: 0.8;
 }
 
-.events-box__cover:before {
+.events-box__bg:before {
 	content: "";
 	opacity: 0;    
 	transition: 0.2s;
