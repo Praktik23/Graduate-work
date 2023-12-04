@@ -17,6 +17,9 @@
                 <div class="header-item">
                    <a class="header-logo" href="index.html"><img src="images/logo.svg
                     " alt=""></a>
+                    <div class="header-burger" onclick="openModal()">
+                        <button class="burger"></button>
+                    </div>
                     <nav class="nav">
                         <ul class="header-nav">
                             <li><a href="#events" class="nav-link">Мероприятия</a></li>
@@ -62,36 +65,33 @@
         <div class="container">
             <h2>Ближайшие события</h2>
             <div class="events-box">
-                <div class="events-box__bg events-box__bg-1">
+                <div class="events-box__bg events-box__bg-1 a">
                     <div class="events-box__iner">
                         <p>29.06 - 4.07</p>
                         <h4>Марафон<br> выносливости</h4>
-                        <a class="events-btn" href="#">записаться</a> 
+                        <a class="events-btn" href="#">записаться</a>
                     </div>
+                    <a class="add-btn" href="#"></a> 
                     <a class="events-link" href="#">марафон</a>
                 </div>   
-                <!-- <div class="events-box__cover">
-                </div> -->
-                <div class="events-box__bg events-box__bg-2">
+                <div class="events-box__bg events-box__bg-2 b">
                     <div class="events-box__iner">
                         <p>9.07</p>
                         <h4>Как стать <br> тренером?</h4>
                         <a class="events-btn" href="#">записаться</a> 
                     </div>
+                    <a class="add-btn" href="#"></a> 
                      <a class="events-link" href="#">вебинар</a>
                 </div> 
-                <!-- <div class="events-box__cover">
-                </div> -->
-                <div class="events-box__bg events-box__bg-3">
+                <div class="events-box__bg events-box__bg-3 c">
                     <div class="events-box__iner">
                         <p>15.07</p>
                         <h4>Йога, как стиль<br> жизни</h4>
                         <a class="events-btn" href="#">записаться</a> 
                     </div>
+                    <a class="add-btn" href="#"></a> 
                      <a class="events-link" href="#">вебинар</a>
                 </div> 
-                <!-- <div class="events-box__cover">
-                </div> -->
             </div>
         </div>
             </div>
@@ -152,7 +152,6 @@
     </section>
     <section class="subscription">
         <div class="container">
-            <div class="subscription-pattern"></div>
             <h3>Подпишитесь на рассылку</h3>
             <div class="form">
                 <form action="">
@@ -164,6 +163,25 @@
                 <input type="checkbox" id="01" class="checkbox">
                 <label for="01">Согласен с обработкой <a href="https://annblok.ru/workshop" target="_blank">персональных данных</a></label>
              </div>
+             <div class="form__responsive">
+                <form action="">
+                    <div>
+                        <div>
+                            <input class="form-input__responsive" id="email" type="email" autocomplete="on" placeholder="Ваш e-mail">
+                        </div>
+                        <div>
+                            <div class="agreement__responsive">
+                                <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo">
+                                <label for="color-1">Согласен с обработкой<a href="https://annblok.ru/workshop" target="_blank">персональных данных</a></label>
+                              </div>
+                        </div>
+                        <div>
+                            <button class="subscription-btn__responsive" type="submit">ПОДПИСАТЬСЯ</button>
+                        </div>    
+                    </div>
+                </form>
+            </div>
+            
         </div>
     </section>
     <section class="description" id="description">
@@ -172,7 +190,7 @@
                 <div class="description-info">
                     <div class="description-wrap">
                         <h2>О компании</h2>
-                        <p>Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь<br> с нами и вы сами увидите, что мы проводим<br> не только онлайн-тренировки.</p>
+                        <p>Наша компания является одной<br class="responsive-br"> из немногих, кто предлагает фитнес<br class="responsive-br"> услуги онлайн! Оставайтесь<br class="norm-br"> с нами<br class="responsive-br"> и вы сами увидите, что мы проводим<br> не только онлайн-тренировки.</p>
                         <a class="btn" href="#">Записаться</a>
                     </div>
                     <div class="description-box__images"></div>
@@ -201,7 +219,7 @@
         <div class="container">
             <div class="footer-flex">
                 <div class="footer-logo">
-                    <a class="header-logo logo" href="index.html"><img src="images/logo.svg
+                    <a class="logo" href="index.html"><img src="images/logo.svg
                         " alt=""></a>
                 </div>
                 <div class="footer-nav">
@@ -223,10 +241,27 @@
             </div>
             <div class="footer-text">
                 <p>© 2022, Все права защищены</p>
-                <p>Сделано в рамках курса учебной платформы <span><a href="#">Annblok</a></span></p>
+                <p class="footer-text__norm">Сделано в рамках курса учебной платформы <span><a href="#">Annblok</a></span></p>
+                <p class="footer-text__responsive">Сделано в рамках курса учебной платформы <span>You Can Code</span></p>
             </div>
         </div>
     </footer>
+    <div class="modal" id="modal">
+        <div class="modal-flex">
+            <a class="header-logo modal-logo" href="index.html"><img src="images/logo.svg
+                " alt=""></a>
+                <button class="burger-close" onclick="closeModal()"></button>
+        </div>
+        <ul class="modal-nav">
+            <li><a href="#events" class="nav-link">Мероприятия</a></li>
+            <li><a href="#timetable" class="nav-link">Расписание</a></li>
+            <li><a href="#description" class="nav-link">О компании</a></li>
+        </ul>
+        <div class="modal-socials">
+            <a  class="instagram" href="#"><img src="images/instagram.svg" alt=""></a>
+            <a class="facebook" href="#"><img src="images/facebook.svg" alt=""></a>
+        </div>
+    </div>
     <script>
         const smoothLinks = document.querySelectorAll('.nav-link');
         for (let smoothLink of smoothLinks) {
@@ -240,6 +275,16 @@
         });
     });
 };
+   // Menu
+
+    function openModal() {
+            document.getElementById("modal").style.top = "0px";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.top = "-400px";
+        }
+
 
     </script>
     
